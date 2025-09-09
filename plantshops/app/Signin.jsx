@@ -2,8 +2,10 @@ import { Text, View, Dimensions, Image, TextInput, TouchableOpacity } from "reac
 import {SafeAreaView} from "react-native-safe-area-context";
 
 
-import Button  from "../component/botton";
-import Textbox  from "../component/textbox";
+import  customButton from "../component/botton";
+import customTextButton from "../coponent/mytextopac";
+import MyTextInput from "../component/textbox";
+
 
 
 const {width, height} = Dimensions.get('screen');
@@ -11,7 +13,7 @@ const {width, height} = Dimensions.get('screen');
 console.log(width, height);
 
 
-const Profile = () => {
+const Signin = () => {
 
   return (
     <SafeAreaView>
@@ -22,11 +24,18 @@ const Profile = () => {
 
     <View>
       <Button/>
-      <Textbox/>
+      <MyTextInput/>
+      <customTextButton/>
+      
     </View>
 
-    </SafeAreaView>
-  );
-}
 
-export default Profile;
+    <customTextButton/>
+
+
+    </SafeAreaView>
+  )
+};
+
+
+export default Signin;

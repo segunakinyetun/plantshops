@@ -1,4 +1,5 @@
 import {useFonts} from 'expo-font';
+import { Stack } from 'expo-router';
 
 
 
@@ -12,7 +13,16 @@ const [loaded, error] = useFonts({
 })
 
   return (
-    <Stack screenOptions={{ headerShown : false}}/>  )}
+    <Stack screenOptions={{ headerShown : false}}> 
+    
+    <Stack screenOptions= "index"/>
+
+
+    <Stack screenOptions= "profile"/>    
+    
+    
+    
+    </Stack>  )}
 
   
 

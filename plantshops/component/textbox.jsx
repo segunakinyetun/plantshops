@@ -1,15 +1,29 @@
 import { Text, TextInput } from "react-native";
 
-const BextInput = (text) => {
+const MyTextInput = () => {
 
     return (
 
     <view>
-         <TextInput style = {{backgroundColor : 'white', borderRadius : 28, height : 58, padding : 18, justifyContent : 'center',}}/>
+
+         <TextInput style = {styles.input}/>
+
+
     </view>
            
 
 
     )
 }
-export default BextInput;
+export default MyTextInput;
+
+
+const styles = StyleSheet.create ({
+input : { 
+    backgroundColor : 'red', 
+    borderRadius : 28, 
+    height : 58, 
+    padding : 18, 
+    justifyContent : 'center',
+}
+})

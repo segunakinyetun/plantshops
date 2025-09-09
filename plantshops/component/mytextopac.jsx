@@ -1,11 +1,12 @@
 import { TouchableOpacity, Text } from "react-native";
 
-const customButton = (text) => {
+
+const customTextButton = (text, onPress) => {
 
     return (
 
         <view>
-             <TouchableOpacity style = {styles.input}>
+             <TouchableOpacity onPress = {onPress} style = {styles.input}>
 
             <Text style = {styles.label}> {text} </Text>
 
@@ -17,18 +18,18 @@ const customButton = (text) => {
 
     )
 }
-export default customButton;
+export default customTextButton;
 
 const styles = StyleSheet.create ({
 input : { 
-    backgroundColor : 'green', 
+    borderColor : 'white',
     borderRadius : 25, 
     height : 58, 
     padding : 18, 
     justifyContent : 'center'
 },
 label : {
-    colour : 'white', 
+    colour : 'black', 
     fontFamily : 'semibold', 
     fontSize : 16, 
     textAlign: 'center',

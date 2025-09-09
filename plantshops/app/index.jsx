@@ -2,9 +2,9 @@ import { Text, View, Dimensions, TouchableOpacity, TextInput, Image} from "react
 import {SafeAreaView} from "react-native-safe-area-context";
 
 
-import  Button from "../component/botton";
-import Bextbox from "../component/textbox";
-
+import  customButton from "../component/botton";
+import MyTextInput from "../component/textbox";
+import customTextButton from "../coponent/mytextopac";
 
 const {width, height} = Dimensions.get('screen');
 console.log(width, height);
@@ -23,8 +23,8 @@ const Index = () => {
       </View>
 
       <Button/>
-      <Textbox/>
-      
+      <TextInput/>
+      <customTextButton/>
 
     </SafeAreaView>
 
